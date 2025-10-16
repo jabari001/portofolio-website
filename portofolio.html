@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+      <!--navigation bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="#Home" class="active">Home</a>
+        <a href="#ABOUT">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+        <button onclick="myFunction()">Mode</button>
+        <script>
+          function myFunction(){
+            var element= document.body;
+            element.classList.toggle('dark-mode');
+          }
+        </script>
+      </nav>
+      <h1>i'm <span>Jabari</span></h1>
+      <p>Gamer and Web Designer</p>
+      <!--insert a picture here-->
+
+
+
+      <!--About section-->
+      <h2>Jabari</h2>
+      <P class="heading">About Me</P>
+
+<p class="paragraph">My name is [Your Name], and I’m a 21-year-old self-taught coder from Mombasa, Kenya. I discovered coding through YouTube, and it quickly became one of my biggest passions. Technology has always fascinated me, and learning to build things from scratch gave me both excitement and confidence.
+  <br><br>
+So far, I have worked on projects such as a login page and a web page for an industrial company. These early projects were important milestones for me, proving that with dedication and curiosity, I could turn ideas into working solutions. The support of my family and my own drive to keep improving have pushed me to continue learning and exploring the tech world.
+ <br>
+Beyond coding, I’m passionate about basketball and gaming—both of which inspire creativity, strategy, and discipline in my everyday life. My goal is to keep sharpening my programming skills, take on bigger challenges, and eventually create impactful digital solutions that make a difference</P>
+    </body>
+    <br>
+
+<!--this is where i will add my project sections incluiding my pictures of the project-->
+<h2 class="heading">Projects</h2>
+<p>This are the projects i've been working on and there are more but i prefer the two of this becaused i liked them much better and i put some hard work into them</p>
+<div class="projects">
+<img src="Screenshot_22-9-2025_95413_.jpeg" alt=" a brand designer project" width="600" height="400">
+
+<img src="Screenshot_22-9-2025_95519_.jpeg" alt="a login page project" width="600" height="400">
+</div>
+
+<br>
+
+<!--contact section-->
+<div>
+  <p> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg>  Mombasa, Kenya</p>
+
+
+  <p> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>  Phone:+254794918813</p>
+
+
+  <p> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg></i>  Email: Luqmanagostine@gmail.com</p>
+</div> <br>
+<P>Lets get in touch .Send me a message</P>
+
+<form action="/action_page.php" target="_blank">
+  <p><input type="text" placeholder="Name" required name="Name">  </p>
+  <p><input type="text" placeholder="Email" required name="Email">  </p>
+  <p><input type="text" placeholder="Subject" required name="Subject">  </p>
+  <p><input type="text" placeholder="Message" required name="Message">  </p>
+  <div class="send">
+  <button type="submit" onclick="myFunction()"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+</svg></i>  SEND MESSAGE</button>
+  </div>
+
+</form>
+</head>
+</html>
